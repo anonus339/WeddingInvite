@@ -1,0 +1,30 @@
+.title-block h1 {
+    font-family: 'Great Vibes', cursive !important;
+}
+
+.timer-value,
+.date h1,
+.date h2 {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.title-names {
+    font-family: 'Great Vibes', sans-serif !important;
+}
+
+.location h1 {
+    font-family: 'Great Vibes', sans-serif !important;
+}
+
+.guest-form h1 {
+   font-family: 'Great Vibes', sans-serif !important; 
+}
+
+.location-overlay h2 {
+    font-family: 'Great Vibes', sans-serif !important; 
+}
+
+.location-main-text,
+.location-note {
+  font-family: 'Parisienne', cursive !important;
+}

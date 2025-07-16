@@ -1,0 +1,457 @@
+:root {
+    --accent1lightlight: #AABA78;
+    --accent1light: #778745;
+    --accent1: #606c38;
+    --accent1dark: #283618;
+    --bg: #edede9;
+    --accent2light: #EDCEAB;
+    --accent2: #dda15e;
+    --accent2dark: #bc6c25;
+    --accent3light:      #9b5de5;
+    --accent3lightlight: #6a00f4;
+}
+
+*, *::before, *::after {
+    margin: 0;
+}
+
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    background: linear-gradient(135deg, #fffaf5 0%, #fdf5ee 100%);
+}
+
+.iframe-mask {
+  width: 362px;
+  height: 810px; 
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.iframe-mask iframe {
+  position: absolute;
+  top: -191px;
+  left: -4px;
+}
+
+.hor {
+    display: flex;
+    flex-direction: row;
+}
+
+.ver {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2.5rem;
+}
+
+section {
+    border-radius: 1.25rem;
+}
+
+.title  {
+    height: 40em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start !important;
+    padding-top: 10px !important;
+    margin-top: 1.25rem;
+    border-radius: 6.5rem;
+}
+
+.title-block {
+    margin-top: 0rem !important;
+    width: 35rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5em;
+}
+
+.title-block h1 {
+    font-family: Oswald;
+    font-size: 3.75rem;
+    color: black;
+}
+
+.title p {
+    font-family: Jost;
+    font-size: 1.25rem;
+}
+
+.that-ver1 {
+    width: 30%;
+}
+
+.guest-form {
+    padding: 1.25rem;
+    margin-top: -0.75rem;
+}
+
+.guest-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.guest-form h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.date {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        150deg,
+        var(--accent3light),
+        var(--accent3lightlight)
+    );
+}
+
+.date h1 {
+    font-family: Oswald;
+    line-height: 1.75rem;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 420 !important;
+}
+
+.date p {
+    margin-top: 0px !important;
+###    font-family: Jost;
+    font-size: 1.25rem;
+    color: white;
+    line-height: 1.25rem;
+}
+
+.date > .hor {
+    height: 2.5rem;
+    margin-top: 1.25rem;
+    padding: 1rem;
+    display: flex;
+    gap: .5rem;
+    position: relative;
+    color: white;
+}
+
+.date-value {
+    font-family: "Space Mono";
+    font-size: 1.25rem;
+}
+
+.date > .hor > p.sep {
+    font-family: "Space Mono";
+    font-size: 1.25rem;
+    color: var(--accent1dark);
+}
+
+.date > .hor > img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    left: 5%;
+    top: -20%;
+}
+
+.date h2 {
+    margin: 1rem 0 .5rem 0;
+    font-family: Oswald;
+    font-size: 1.75rem;
+    color: white;
+    font-weight: normal;
+}
+
+.title-names {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -110px;
+  margin-left: 75px;
+}
+
+.timer {
+    display: flex;
+    gap: 1rem;
+}
+
+.timer-value {
+    font-family: "Space Mono";
+    font-size: 1.25rem;
+    color: white !important;
+    background-color: var(--accent1);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    
+    width: 2.3rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 0.5rem;
+    padding: 0;
+    text-align: center;
+}
+
+
+.footer-contacts {
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.fancy-link {
+    position: relative;
+    font-family: Jost;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.fancy-link::before,
+.fancy-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, var(--accent2dark), var(--accent1), var(--accent2dark));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.fancy-link::after {
+    height: 100%;
+    top: 0;
+    bottom: auto;
+    z-index: -1;
+    opacity: 0;
+    transform: scaleX(1.2);
+    filter: blur(8px);
+    transition: opacity 0.4s ease;
+    background: radial-gradient(circle, var(--accent1light) 0%, transparent 80%);
+}
+
+.fancy-link:hover {
+    color: var(--accent2light);
+}
+
+.fancy-link:hover::before {
+    transform: scaleX(1);
+}
+
+.fancy-link:hover::after {
+    opacity: 1;
+}
+
+
+
+.footer-main {
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-main a {
+    font-family: Jost;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-main a:hover {
+    color: var(--accent2);
+}
+
+.timer-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.special-glow {
+  text-decoration: none !important;
+}
+
+
+.timer-value {
+    font-family: "Space Mono";
+    font-size: 1.25rem;
+    color: var(--accent1light);
+    text-align: center;
+    background-color: var(--accent1lightlight);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.timer > .sep {
+    font-family: "Space Mono";
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+}
+
+.hint {
+    font-family: Jost;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.location {
+    padding: 1.25rem;
+    width: 60%;
+    margin-left: 2.5rem;
+}
+
+.location h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.location-description {
+
+    align-items: center;
+    margin-top: 7.5rem;
+}
+
+.location-description h2 {
+    font-family: Oswald;
+    font-size: 1.75rem;
+}
+
+.location-description p {
+    font-family: Jost;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+.that-hor1 {
+    gap: 1.25rem;
+}
+
+.location-description {
+    position: relative;
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+    background-image: url('https://assets.prophotos.ru/data/articles/0001/6544/100197/thumb_860.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.location-overlay {
+    position: relative;
+    z-index: 2;
+    backdrop-filter: brightness(85%) blur(1px);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 3rem 1rem;
+    border-radius: 1.5rem;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.location-main-text {
+    font-family: Jost;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.75rem;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.location-note {
+    margin-top: 2rem !important;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    color: #fdf0d6 !important;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    font-weight: 500;
+    text-align: center;
+}
+
+.location-description::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+    border-radius: 2rem;
+}
+
+.location-description h2,
+.location-description p {
+    z-index: 2;
+    position: relative;
+    color: white;
+}
+
+
+hr {
+    margin-top: 1rem;
+    color: var(--accent1light);
+    width: 90%;
+    margin-left: 5%;
+}
+
+footer {
+    margin-top: 2.5rem;
+    padding: 2.5rem 0;
+    background-color: #171717;
+    width: 100%;
+    height: 10rem;
+    color: white;
+}    
+
+footer h1 {
+    font-family: Oswald;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}    
+
+footer > .wrapper > .hor {
+    justify-content: space-evenly;
+}    
+
+footer a {
+    margin-top: 0.25rem;
+    text-decoration: underline;
+    color: white;
+    font-size: 1.25rem;
+    font-family: Jost;
+    
+}    
+
+
+@media(max-width: 1200px) {
+
+.wrapper {
+    margin: 0;
+}
+
+}
