@@ -15,20 +15,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <main>
         <div class="wrapper ver">
-            <section class="title" style="background-image: url(images/VV.jfif);">
-                <div class="title-block">
-                    <div class="ver">
-                        <h1>Приглашаем Вас</h1>
-                        <h1>на нашу свадьбу</h1>
-                    </div>
-                    <p class="title-names">Иван и Виктория</p>
-                </div>
-            </section>
+        <hr style="margin-top: 2rem !important;">
+            <section class="intro-titles">
+      <h1>Приглашаем вас</h1>
+      <h1>На нашу свадьбу</h1>
+    </section>
+        <hr>
+    <p class="title-names">Иван и Виктория</p>
+    <section class="photo-section">
+  <div class="photo-canvas-wrapper">
+    <canvas id="photoCanvas"></canvas>
+  </div>
+    </section>
+        <hr>
             <div class="hor that-hor1">
                 <div class="ver that-ver1">
                     <section class="date">
@@ -82,27 +85,29 @@
             <section class="guest-form">
                     <h1>Анкета гостя</h1>
             </section>
-            <div class="iframe-mask" style="left:-10px !important;">
+            <div class="iframe-mask" style="left:-5px !important;">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdpoE00PTPH5ktP8WAirwg-_0oi0J4l3KCfA11qC9-6WZP3A/viewform?embedded=true" width="372" height="1500" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
             </div>
         </div>
     </main>
     <footer>
-        <div class="wrapper">
-            <h1>Контакты</h1>
-            <div class="hor footer-main">
-                <div class="ver center">
-                    <a href="https://example.com" class="main-link special-glow">Чат с Организатором</a>
-                </div>
-            </div>
-            <div class="hor footer-contacts">
+    <div class="wrapper">
+        <h1>Контакты</h1>
+        <div class="hor footer-contacts">
             <a href="https://t.me/lamantishka" class="fancy-link">Контакт Виктории</a>
             <a href="https://t.me/nagebator22820" class="fancy-link">Контакт Ивана</a>
         </div>
+        <div class="hor footer-main">
+            <div class="ver center">
+                <a href="https://t.me/+Zwi7i4LAb2Y0MGMy" class="main-link special-glow">Чат с нами</a>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
     <script src="scripts/timer.js"></script>
     <script src="scripts/text_left.js"></script>
+    <script src="scripts/canvas.js"></script>
 </body>
 </html>

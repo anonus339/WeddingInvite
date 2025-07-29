@@ -1,14 +1,14 @@
 :root {
     --accent1lightlight: #AABA78;
-    --accent1light: #778745;
-    --accent1: #606c38;
+    --accent1light: #A4B37A;
+    --accent1: #4a6352;
     --accent1dark: #283618;
     --bg: #edede9;
     --accent2light: #EDCEAB;
     --accent2: #dda15e;
     --accent2dark: #bc6c25;
-    --accent3light:      #9b5de5;
-    --accent3lightlight: #6a00f4;
+    --accent3light:      #d4e9d4;
+    --accent3lightlight: #e0f2e9;
 }
 
 *, *::before, *::after {
@@ -16,9 +16,43 @@
 }
 
 body {
-    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-    background: linear-gradient(135deg, #fffaf5 0%, #fdf5ee 100%);
+    background: linear-gradient(135deg, #fef6f0 0%, #f8f4ec 100%);
 }
+
+
+.intro-titles {
+  text-align: center;
+  margin: 2.25rem 0 1rem;
+}
+.intro-titles h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--accent1dark);
+  margin: 0.25rem 0;
+}
+
+.photo-section {
+position: relative;
+  width: 100%;
+  height: 40vh;
+}
+.photo-canvas-wrapper {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#photoCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+
 
 .iframe-mask {
   width: 362px;
@@ -178,11 +212,10 @@ section {
 }
 
 .title-names {
-  font-size: 25px;
+  font-size: 50px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: -110px;
-  margin-left: 75px;
+  margin-bottom: -20px;
 }
 
 .timer {
@@ -193,7 +226,7 @@ section {
 .timer-value {
     font-family: "Space Mono";
     font-size: 1.25rem;
-    color: white !important;
+    color: #e3f3e3 !important;
     background-color: var(--accent1);
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     
@@ -271,8 +304,7 @@ section {
 }
 
 .footer-main a {
-    font-family: Jost;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: white;
     text-decoration: underline;
     transition: color 0.3s ease;
@@ -414,8 +446,8 @@ section {
 hr {
     margin-top: 1rem;
     color: var(--accent1light);
-    width: 90%;
-    margin-left: 5%;
+    width: 65%;
+    margin-left: 17%;
 }
 
 footer {
